@@ -12,10 +12,10 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Use Node.js 16  # Or the appropriate Node version for your project
+      - name: Use Node.js 20  # Or the appropriate Node version for your project
         uses: actions/setup-node@v3
         with:
-          node-version: 16
+          node-version: 20 
 
       - name: Cache dependencies
         uses: actions/cache@v3

@@ -33,7 +33,7 @@ const Header = () => {
         <div className="columns is-centered is-vcentered"> 
           {data.allDataYaml.nodes[0].institutions.map((institution, index) => (
             <div className="column has-text-centered" key={index}>
-              <img src={`/images/${institution.logo_path}`} alt={institution.name} style={{ maxHeight: '100px' }} />
+              <img src={`images/${institution.logo_path}`} alt={institution.name} style={{ maxHeight: '100px' }} />
             </div>
           ))}
 

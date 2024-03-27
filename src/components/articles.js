@@ -31,7 +31,7 @@ const Articles = () => {
             <div class="columns is-vcentered">
              <div class="column is-3">
               <figure class="image">
-               <img src={`/images/${article.image_path}`} alt="img"/>
+               <img src={`images/${article.image_path}`} alt="img"/>
               </figure>
              </div>
              <div class="column is-9">

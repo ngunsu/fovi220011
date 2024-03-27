@@ -38,7 +38,7 @@ const Material = ({ children }) => {
             <div class="columns is-vcentered">
              <div class="column is-3">
               <figure class="image">
-               <img src={`/images/${materials.thumbs_path}`} alt="img"/>
+               <img src={`images/${materials.thumbs_path}`} alt="img"/>
               </figure>
              </div>
              <div class="column is-9">

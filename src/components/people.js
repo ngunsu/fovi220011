@@ -31,7 +31,7 @@ const People = () => {
           {data.allDataYaml.nodes[0].team.map((team, _) => (
             <div class="column is-narrow">
               <figure class="image is-128x128">
-                <img src={`/images/${team.image_path}`} alt={team.name} class= "is-rounded"/>
+                <img src={`images/${team.image_path}`} alt={team.name} class= "is-rounded"/>
               </figure>
               <div class="profile-info">
                 <p class="title is-5">{team.name}</p>

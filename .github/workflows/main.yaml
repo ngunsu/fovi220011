@@ -37,6 +37,6 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public  
           destination_dir: .  # Deploy to the root of the target repo
-          user_name: 'ngunsu'  # Username of the target repository owner
+          user_name: 'fovi22011'  # Username of the target repository owner
           repository_name: 'fovi22011.github.io'  # Name of the target repository
 

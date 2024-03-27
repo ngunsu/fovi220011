@@ -1,50 +1,67 @@
 import React from 'react'
 import '../styles/index.css'
 import '../styles/bulma.min.css'
-import universityLogo1 from '../static/imgs/logo_uach.png' // Adjust paths
-import universityLogo2 from '../static/imgs/logo_uss.png' // Adjust paths
+import YouTube from 'react-youtube'
 import { graphql, useStaticQuery } from 'gatsby'
 
 const Header = () => {
 
   const data = useStaticQuery(graphql`
       query {
-         allDataYaml{ # Optional: rename if needed
+         allDataYaml{
           nodes {
             title
+            abstract
+            institutions {
+              name
+              logo_path
+            }
+            showcase{
+              title
+              url
+            }
           }
         }
       }
     `)
-
   return (
 
   <section className="hero">
     <div className="hero-body">
-       <div className="container is-max-desktop">
+      <div className="container is-max-desktop">
 
-       <div className="container is-max-desktop">
-         {/* Logo Container */}
         <div className="columns is-centered is-vcentered"> 
-          <div className="column has-text-centered">
-            <img src={universityLogo1} alt="University 1 Logo" style={{ maxHeight: '100px' }} />
-          </div>
-          <div className="column has-text-centered">
-            <img src={universityLogo2} alt="University 2 Logo" style={{ maxHeight: '100px' }} />
-          </div>
-        </div>
+          {data.allDataYaml.nodes[0].institutions.map((institution, index) => (
+            <div className="column has-text-centered" key={index}>
+              <img src={`/images/${institution.logo_path}`} alt={institution.name} style={{ maxHeight: '100px' }} />
+            </div>
+          ))}
+
         </div>
 
-        <div className="conumns is-centered">
+        <div className="columns is-centered">
           <div className="column has-text-centered">
             <h1 className="title is-1 publication-title">{data.allDataYaml.nodes[0].title}</h1>
-            {/* ... Other header content ... */}
           </div>
         </div>
+
+
+       <div className="columns is-centered">
+          <div className="column has-text-centered">
+             <YouTube videoId="i4e1z7lkDRU" opts={{height: '390', width: '640'}} />
+          </div>
+        </div>
+
+       <div className="columns is-centered">
+          <div className="column has-text-justified">
+            {data.allDataYaml.nodes[0].abstract}
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
-)
+  )
 }
 
 export default Header

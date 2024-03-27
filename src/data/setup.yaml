@@ -1,1 +1,64 @@
+# -----------------
+# Project general information
+# -----------------
 title: 'Red colaborativa para la disminución de la brecha digital en la escuela rural'
+abstract: 'Iniciativa enfocada en el uso de la robótica e inteligencia artificial en aulas de escuelas rurales que cuenta con la participación de la Universidad Austral de Chile, la Universidad San Sebastián y la Universidad Ramón Lull de España, para impulsar acciones colaborativas que contribuyan a la disminución de la brecha digital en la escuela rural, incorporando los últimos desarrollos tecnológicos en el aula.'
+id: 'FOVI220011'
+
+# -----------------
+# Project instituions and founding
+# -----------------
+# Logo path root is asumed to be /static/images/ Use only the name of the image
+institutions:
+  - name: 'Universidad San Sebastián'
+    logo_path: 'logo_uss.png'
+  - name: 'Universidad Austral de Chile'
+    logo_path: 'logo_uach.png'
+  - name: 'Universidad Ramon Llull'
+    logo_path: 'logo_ramon_llull.png'
+  - name: 'ANID'
+    logo_path: 'logo_anid.png'
+
+
+## Showcase
+showcase:
+  - title: 'FOVI220011'
+  - url: 'https://www.youtube.com/watch?v=i4e1z7lkDRU&ab_channel=AngelaCastro'
+
+## Team:
+team:
+  - name: 'Angela Castro'
+    position: 'Investigadora Principal'
+    email: 'angela.castro@uss.cl'
+    image_path: 'angela.jpeg'
+  - name: 'Cristhian Aguilera'
+    position: 'Co-Investigador'
+    email: 'cristhian.aguilera@uss.cl'
+    image_path: 'cristhian.jpeg'
+  - name: 'Jhonny Medina'
+    position: 'Co-Investigador'
+    email: 'jhonnymedina@uach.cl'
+    image_path: 'jhonny.png'
+  - name: 'Monserrat Prat'
+    position: 'Co-Investigador'
+    image_path: 'monserrat.jpeg'
+    email: 'montserratpm3@blanquerna.url.edu'
+
+
+## Articles:
+articles:
+  - APA: 'Aguilera, C. A., Castro, A., Aguilera, C., & Raducanu, B. (2024). Voice-Controlled Robotics in Early Education: Implementing and Validating Child-Directed Interactions Using a Collaborative Robot and Artificial Intelligence. Applied Sciences, 14(6), 2408.'
+    url: 'https://www.mdpi.com/2076-3417/14/6/2408'
+    image_path: 'manito.gif'
+    video_url: 'https://www.youtube.com/watch?v=Ng9YuKg0IMY&ab_channel=CristhianAlejandroAguileracarrasco'
+
+## Materials:
+materials:
+  - thumbs_path: 'apk.png'
+    title: 'Material 1'
+    description: 'Aplicación en Android para la detección de objetos mediante inteligencia artificial, diseñada con un enfoque versátil que abarca tanto aplicaciones prácticas como fines educativos.'
+    url: 'https://drive.google.com/file/d/1ahI_UY9k8bqe1YKBnu67E4uFovq_UAhF/view?usp=sharing'
+  - thumbs_path: 'apk.png'
+    title: 'Material 2'
+    description: 'Aplicación en Android para la detección de puntos claves que definen el cuerpo humano mediante inteligencia artificial, diseñada con un enfoque versátil que abarca tanto aplicaciones prácticas como fines educativos.'
+    url: 'https://drive.google.com/file/d/12t9zG0NzWPORjqviqmez0UeGMspiDZuH/view?usp=sharing'

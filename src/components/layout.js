@@ -9,6 +9,9 @@ import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
+import People from "./people"
+import Articles from "./articles"
+import Material from "./material"
 import "./layout.css"
 
 const Layout = ({ children }) => {
@@ -25,6 +28,25 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+
+      <div className="container is-max-desktop">
+        <div style={{height: '2px', backgroundColor: 'lightgrey', width: '100%'}}></div>
+      </div>
+
+      <People/>
+
+      <div className="container is-max-desktop">
+        <div style={{height: '2px', backgroundColor: 'lightgrey', width: '100%'}}></div>
+      </div>
+
+      <Articles/>
+
+      <div className="container is-max-desktop">
+        <div style={{height: '2px', backgroundColor: 'lightgrey', width: '100%'}}></div>
+      </div>
+
+      <Material/>
+
     </>
   )
 }

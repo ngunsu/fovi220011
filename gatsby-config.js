@@ -12,7 +12,7 @@ module.exports = {
     title: `FOVI220011`,
     description: `Proyecto FOVI220011`,
     author: `Cristhian aguilera`,
-    siteUrl: 'http://fovi22011.github.io',
+    siteUrl: 'https://ngunsu.github.io/fovi220011/',
   },
   plugins: [
     `gatsby-transformer-yaml`,

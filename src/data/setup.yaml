@@ -21,9 +21,8 @@ institutions:
 
 
 ## Showcase
-showcase:
-  - title: 'FOVI220011'
-  - url: 'https://www.youtube.com/watch?v=i4e1z7lkDRU&ab_channel=AngelaCastro'
+showcase_title: 'FOVI220011'
+showcase_url: 'https://www.youtube.com/embed/Ng9YuKg0IMY?si=7yOrE9UL87OSCJgI'
 
 ## Team:
 team:

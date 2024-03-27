@@ -1,7 +1,6 @@
 import React from 'react'
 import '../styles/index.css'
 import '../styles/bulma.min.css'
-import YouTube from 'react-youtube'
 import { graphql, useStaticQuery } from 'gatsby'
 
 const Header = () => {
@@ -16,10 +15,8 @@ const Header = () => {
               name
               logo_path
             }
-            showcase{
-              title
-              url
-            }
+            showcase_title
+            showcase_url
           }
         }
       }
@@ -48,7 +45,7 @@ const Header = () => {
 
        <div className="columns is-centered">
           <div className="column has-text-centered">
-             <YouTube videoId="i4e1z7lkDRU" opts={{height: '390', width: '640'}} />
+              <iframe frameborder="0" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" title="showcase" width="640" height="390" src={`${data.allDataYaml.nodes[0].showcase_url}?enablejsapi=1&amp;origin=http%3A%2F%2Flocalhost%3A8888&amp;widgetid=1" id="widget2`}></iframe>
           </div>
         </div>
 
